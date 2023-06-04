@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <script src="logica.js" defer></script>
+    <script src="https://kit.fontawesome.com/d267781e5c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <title>Encriptador - Alura</title>
+</head>
+
+<body>
+    <main>
+        <section class="Box-logo">
+            <h1 class="Logo">
+                <img src="Pictures/Logo.png" alt="Logo-alura">
+            </h1>
+        </section>
+
+        <section class="box-area-texto">
+            <div class="Container-entrada">
+                <div class="Box-container-entrada">
+                    <textarea class="Area-texto" name="Entrada-texto" id="Entrada-texto" cols="40" rows="13"
+                        placeholder="Ingrese el texto aquí" autofocus></textarea>
+                </div>
+                <button id="btn-pegar" value="Pegar">Pegar</button>
+                <section class="Container-buttons">
+                    <p><i class="fa-sharp fa-solid fa-circle-exclamation icon"></i> Solo letras minúsculas y sin asento.</p>
+                    <div class="buttons">
+                        <button value="Encriptar" id="btn-encriptar">Encriptar</button>
+                        <button value="Desencriptar" id="btn-desencriptar">Desencriptar</button>
+                    </div>
+                </section>
+            </div>
+
+            <div class="Container-salida">
+                <div class="Container-salida__lectura" id="salida-lectura">
+                    <span class="Container-salida__lectura__input" id="salida-texto"></span>
+                    <div class="fondo-salida" id="fondo-salida">
+                        <img class="caricatura" src="Pictures/Muñeco.png" alt="Caricatura">
+                        <div class="box-info-mensaje">
+                            <h3 class="Text-info-mensaje Txt-ngn-msj">Ningún mensaje fue encontrado</h3>
+                            <p class="Text-info-mensaje Txt-ing-txt">Ingresa el texto que desees encriptar o
+                                desencriptar.</p>
+                        </div>
+                    </div>
+                    <button id="btn-copiar" value="copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="indicador">
+            <i class="fa-solid fa-angle-down fa-bounce"></i>
+        </section>
+    </main>
+
+    <footer>
+        <section class="Box-footer">
+            <div class="Redes-sociales">
+                <a href="https://github.com/David-Soriano"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/david-soriano-soft"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/davidjc_03?igshid=MzNlNGNkZWQ4Mg== "><i
+                        class="fa-brands fa-instagram"></i></a>
+                <div>
+                    <p>By David Soriano</p>
+                </div>
+            </div>
+            <div class="more-info">
+                <div class="Companias">
+                    <p><span id="Company"><a href="https://www.aluracursos.com/">Alura</a></span></p>
+                    <p>||</p>
+                    <p><span id="Company"><a
+                                href="https://www.oracle.com/co/education/oracle-next-education/">ONE</a></span></p>
+                </div>
+                <p class="copy">&copy 2023</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

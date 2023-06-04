@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@300&display=swap');
+
+body {
+    background-color: #F3F5FC;
+}
+
+.Logo {
+    display: inline-flex;
+    margin: 40px 0px 0 40px;
+    position: relative;
+    z-index: 100;
+}
+
+.box-area-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Container-entrada {
+    display: flex;
+    margin: 40px 120px -41px -190px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.Container-entrada textarea {
+    border: none;
+    background: transparent;
+}
+
+.Container-entrada textarea:focus {
+    outline: none;
+    background: none;
+    caret-color: #0A3871;
+}
+
+.Container-entrada textarea::placeholder {
+    color: #0A3871;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+.Area-texto {
+    resize: none;
+    font-size: 22px;
+    font-family: 'Inter';
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.Area-texto::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.Area-texto::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.Area-texto::-webkit-scrollbar-button:increment,
+.Area-texto::-webkit-scrollbar-button {
+    display: none;
+}
+
+.Area-texto::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.Area-texto::-webkit-scrollbar-thumb {
+    background-color: #285892;
+    border-radius: 20px;
+    border: 2px solid #F3F5FC;
+}
+
+.Area-texto::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.Container-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0 0;
+}
+
+.Container-buttons p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.Container-salida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 32px;
+    height: 91vh;
+    width: 260px;
+    margin: -66px -395px 0px 21px;
+    padding: 24px;
+
+    font-size: 10px;
+    background: #FFF;
+    box-shadow: 0px 7px 28px -23px;
+}
+
+.Container-salida__lectura{
+    word-break: break-all;
+}
+.Container-salida__lectura__input {
+    display: flex;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+}
+
+.fondo-salida {
+    position: relative;
+    z-index: 10;
+    top: -170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 500ms all
+}
+
+.box-info-mensaje .Txt-ngn-msj {
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.box-info-mensaje .Txt-ing-txt {
+    color: #495057;
+    font-family: 'Inter';
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 150%;
+}
+
+.icon {
+    color: #65747D;
+}
+
+.buttons {
+    margin: 14px 0 0;
+}
+
+.buttons button {
+    padding: 8px 24px;
+    width: 328px;
+    height: 50px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#btn-encriptar {
+    margin: 0 24px 0 0;
+    background-color: #0A3871;
+    color: #FFF;
+    border: none;
+    transition: 400ms background;
+}
+
+#btn-encriptar:hover {
+    background-color: #09305f;
+}
+
+#btn-desencriptar {
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    transition: 400ms background;
+}
+
+#btn-desencriptar:hover {
+    background-color: #bbc2ca;
+}
+
+#btn-copiar {
+    display: none;
+    position: absolute;
+    padding: 2px 9px;
+    border-radius: 6px;
+    border: 1px solid #124c92;
+    background-color: #124c92;
+    color: #FFF;
+    font-family: 'Inter';
+    font-weight: 400;
+    margin: 0 0 0 80px;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+#btn-pegar {
+    display: none;
+    position: absolute;
+    width: 50px;
+    padding: 2px 9px;
+    border-radius: 6px;
+    border: 1px solid #124c92;
+    background-color: #124c92;
+    color: #FFF;
+    font-family: 'Inter';
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+    cursor: pointer;
+    transition: all 400ms;
+    margin: 50vh 0 0;
+}
+
+#btn-copiar:hover {
+    background-color: #FFF;
+    border: 1px solid #124c92;
+    color: #124c92;
+}
+
+#btn-pegar:hover {
+    background-color: #FFF;
+    border: 1px solid #124c92;
+    color: #124c92;
+}
+
+.indicador {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6px;
+    font-size: 25px;
+    color: #0A3871;
+}
+
+footer {
+    background-color: #B4D1CC;
+    width: 100%;
+    height: 25vh;
+}
+
+.Box-footer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Box-footer p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 10px;
+    opacity: 0.8;
+}
+
+.Redes-sociales {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.Redes-sociales a,
+#Company a {
+    text-decoration: none;
+    color: #000;
+}
+
+.Redes-sociales i {
+    margin-right: 5px;
+    transition: 400ms all;
+}
+
+.Redes-sociales i:hover {
+    transform: scale(1.1);
+}
+
+.Companias {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 26px;
+}
+
+.Companias p {
+    font-size: 12px;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+#Company {
+    font-weight: 800;
+}
+
+.Companias p,
+#Company a {
+    cursor: default;
+}
+
+.more-info .copy {
+    font-size: 11px;
+}
+
+/*-------------Alerts--------*/
+
+.gato {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    color: #f9f9fa;
+    opacity: 0.4;
+}
+
+.popup-class {
+    border-radius: 20px;
+}
+
+.confirmButton-class {
+    opacity: 0.5;
+    padding: 2px 5px;
+    border-radius: 4px;
+    border: none;
+    color: #2a3a44;
+    font-size: 12px;
+    font-family: 'Inter';
+}
+
+.p-class {
+    margin-top: 5px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 12px;
+    color: #a7a3a3;
+}
+
+@media screen and (max-width: 1020px) {
+
+    .Box-logo{
+        width: 100%;
+    }
+    .box-area-texto {
+        flex-direction: column;
+        margin: 40px auto;
+        align-items: center;
+        width: 113%;
+    }
+
+    .Container-entrada{
+        margin: auto;
+        width: 90%;
+    }
+
+    .Container-salida{
+        margin: 66px auto;
+        width: 90%;
+    }
+
+    .Logo{
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #btn-encriptar{
+        margin-bottom: 12px;
+    }
+
+    #btn-copiar{
+        margin: 0 0 0 100px;
+    }
+}
+
+@media screen and(max-width: 400px) {
+    .Container-buttons{
+        align-items: center;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
